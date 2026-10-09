@@ -1,0 +1,15 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'app.qingyao.auth'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'app.qingyao.auth'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0.0'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}
+dependencies { implementation files('libs/zxing-core-3.5.4.jar') }
+
